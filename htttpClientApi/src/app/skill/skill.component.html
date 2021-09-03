@@ -1,0 +1,7 @@
+<ul>
+    <li *ngFor="let skill of skills">{{skill.skill_name}}</li>
+</ul>
+
+<p>{{skills[0].skill_name}}</p>
+
+<button (click)="loadSkills()">Carica</button>

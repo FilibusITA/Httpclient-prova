@@ -1,5 +1,5 @@
 {
-  "name": "htttp-client-api",
+  "name": "api-http-cient",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
