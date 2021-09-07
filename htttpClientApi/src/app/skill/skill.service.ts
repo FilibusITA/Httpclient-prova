@@ -8,16 +8,19 @@ import { Skill, SkillSearchResponse } from './skill';
   providedIn: 'root'
 })
 export class SkillService {
+ 
+  
   skills: Skill[] = []
-  link: string = 'https://skillsapi.itsyourskills.com/search-skills?search_query=java&offset=0&limit=20'
+  link: string =''
 
   constructor(private http: HttpClient) { }
 
-  getSkills(token: string): Observable<SkillSearchResponse> {
+  getSkills(token: string, searchQuery: string): Observable<SkillSearchResponse> {
     console.log(token);
     const headers = new HttpHeaders({
       'Authorization': 'Bearer ' + token
     });
+    this.link = 'https://skillsapi.itsyourskills.com/search-skills?search_query='+searchQuery+'&offset=0&limit=1000'
     return this.http.get<SkillSearchResponse>(this.link, { headers: headers })
   }
 
