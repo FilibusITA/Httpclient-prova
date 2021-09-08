@@ -7,7 +7,11 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SkillComponent } from './skill/skill.component';
 import { CategoriesComponent } from './categories/categories.component'
-
+//import {RatingModule} from 'primeng/rating';
+import {SplitButtonModule} from 'primeng/splitbutton';
+import {TabViewModule} from 'primeng/tabview';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RatingModule } from 'ngx-bootstrap/rating';
 
 @NgModule({
   declarations: [
@@ -19,7 +23,11 @@ import { CategoriesComponent } from './categories/categories.component'
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    RatingModule,
+    SplitButtonModule,
+    TabViewModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

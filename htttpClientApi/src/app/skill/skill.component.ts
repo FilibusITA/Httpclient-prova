@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { RATING_VALUE_ACCESSOR } from 'primeng/rating';
 import { Skill } from './skill';
 import { SkillService } from './skill.service';
 
@@ -6,20 +7,24 @@ import { SkillService } from './skill.service';
   selector: 'app-skill',
   templateUrl: './skill.component.html',
   styleUrls: ['./skill.component.css']
+  
+    
 })
+
 export class SkillComponent implements OnInit {
+  y= 0;
   searchQuery: string = '';
   skills: Skill[] = []
   constructor(private skillService: SkillService) { }
 
   ngOnInit(): void {
-
+    
 
   }
 
   loadSkills() {
     console.log("search:",this.searchQuery)
-    this.skillService.getSkills('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZpbGliZXJ0by5yaWNjaUBzbWFydHBlZy5ldSIsImV4cGlyZXMiOjE2MzEwOTExMDQuOTg0Mjc2OH0.3SpMhS2bpw0bZZ33D7oez2T_o4jhBW75q3z2wc2l7sI', this.searchQuery)
+    this.skillService.getSkills('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZpbGliZXJ0by5yaWNjaUBzbWFydHBlZy5ldSIsImV4cGlyZXMiOjE2MzExNzM5MzkuODA3OTYwN30.9znOpPRUVixSWL-bnCTSRjC90kJhwAJ2CHmZb8xBPyM', this.searchQuery)
       .subscribe(newskills => 
          this.skills = newskills.skills
         );

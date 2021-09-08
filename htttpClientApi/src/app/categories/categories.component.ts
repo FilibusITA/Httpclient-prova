@@ -16,7 +16,7 @@ export class CategoriesComponent implements OnInit {
   }
 
   loadCategories() {
-    this.categoryService.getCategories('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZpbGliZXJ0by5yaWNjaUBzbWFydHBlZy5ldSIsImV4cGlyZXMiOjE2MzEwOTExMDQuOTg0Mjc2OH0.3SpMhS2bpw0bZZ33D7oez2T_o4jhBW75q3z2wc2l7sI')
+    this.categoryService.getCategories('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZpbGliZXJ0by5yaWNjaUBzbWFydHBlZy5ldSIsImV4cGlyZXMiOjE2MzExNzM5MzkuODA3OTYwN30.9znOpPRUVixSWL-bnCTSRjC90kJhwAJ2CHmZb8xBPyM')
     .subscribe(newCategories=>this.categories = newCategories.popular_categories);
   }
 
