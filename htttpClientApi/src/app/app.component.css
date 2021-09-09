@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+    margin: o;
+    padding: 0;
+}
+
+body{
+    background: #94b6c5;
+}
+
+.menu,
+a,
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.menu{
+    list-style: none;
+
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu li a{
+    transition: all .3s ease;
+}
+
+.menu a:hover{
+    color: black;
+}
+
+button{
+    padding: 9px 25px;
+    background: #0d94a6;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover{
+    background:black;
+}
