@@ -1,0 +1,17 @@
+.footer{
+    background-image: url(https://www.annuncisubito.eu/wp-content/uploads/2016/10/sfondi-background-watercolor-arte-mediajob.eu-annuncisubito.eu-11-848x566.jpg);
+    padding: 30px;
+    margin-top: 105px;
+}
+
+a{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: black;
+}

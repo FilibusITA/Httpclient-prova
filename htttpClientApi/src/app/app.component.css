@@ -1,57 +1,23 @@
-*{
-    box-sizing: border-box;
-    margin: o;
-    padding: 0;
+.banner{
+    background: #2e964d00;
+    text-align: center;
+    padding: 400px 0 30px 0;
+    background-image: url(https://www.sabdesign.it/wp-content/uploads/2015/10/sfondo-sabdesign-siti-web.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.banner p{
+    font-size: 2,4px;
+    font-family: 'Condal', sans-serif;
+    color: white;
 }
 
-body{
-    background: #94b6c5;
-}
-
-.menu,
-a,
-button{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: #fff;
-    text-decoration: none;
-}
-
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
-}
-
-.menu{
-    list-style: none;
-
-}
-
-.menu li{
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.menu li a{
-    transition: all .3s ease;
-}
-
-.menu a:hover{
-    color: black;
-}
-
-button{
-    padding: 9px 25px;
-    background: #0d94a6;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all .3s ease;
-}
-
-button:hover{
-    background:black;
+.titolo{
+    background: #2e964d00;
+    padding: 60px 0 30px 0;
+    background-image: url(./logo/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
 }

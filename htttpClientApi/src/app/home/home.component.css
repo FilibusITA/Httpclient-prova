@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home-background{
+    background-image: url(https://www.annuncisubito.eu/wp-content/uploads/2016/10/sfondi-background-watercolor-arte-mediajob.eu-annuncisubito.eu-11-848x566.jpg);
+    background-size: cover;
+}
+
+.menu,
+a,
+button{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.menu{
+    list-style: none;
+
+}
+
+.menu li{
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.menu li a{
+    transition: all .3s ease;
+}
+
+.menu a:hover{
+    color: black;
+}
+
+button{
+    padding: 9px 25px;
+    background: #0d94a6;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+button:hover{
+    background:black;
+}
+
+

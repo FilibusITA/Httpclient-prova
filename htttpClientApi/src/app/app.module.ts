@@ -12,12 +12,16 @@ import {SplitButtonModule} from 'primeng/splitbutton';
 import {TabViewModule} from 'primeng/tabview';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RatingModule } from 'ngx-bootstrap/rating';
+import { HomeComponent } from './home/home.component';
+import { BassoComponent } from './basso/basso.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    HomeComponent,
+    BassoComponent
   ],
   imports: [
     BrowserModule,
