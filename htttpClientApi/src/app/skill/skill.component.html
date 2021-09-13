@@ -1,29 +1,31 @@
+<app-home></app-home>
 
-
-<div>
-    <rating [max]="5" [(ngModel)]="y" [customTemplate]="tt"></rating>
-    <div class="card">
-      <pre class="card-block card-header" style="margin:15px 0;"> <b>(<i>Rate:</i> {{y}})</b> </pre>
-    </div>
-    <ng-template #tt let-i="index" let-v="value">
-      <button class="btn btn-{{i < v ? 'warning' : 'default'}}">
-        {{i < v ? '&#9733;' : '&#9734;'}}
-      </button>
-    </ng-template>
-  </div>
-
+<div class="d-flex">
+  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchQuery">
+  <button class="btn btn-outline-success" type="button" (click)="loadSkills()">Search</button>
+</div>
 
     <ul>
         <li *ngFor="let skill of skills">{{skill.skill_name}}</li>
     </ul>
     
-    
-    
-    <div>
-        
-        <input class="form-control me-2" type="text" placeholder="Search" [(ngModel)]="searchQuery" > 
-        
-        <button type="button" class="btn btn-outline-success" (click)="loadSkills()">Load</button>
+
+      
+
+      <div>
+        <rating [max]="5" [(ngModel)]="y" [customTemplate]="tt"></rating>
+        <ng-template #tt let-i="index" let-v="value">
+          <button class="btn btn-{{i < v ? 'warning' : 'default'}}">
+            {{i < v ? '&#9733;' : '&#9734;'}}
+          </button>
+        </ng-template>
       </div>
 
-
+     
+     
+     
+      <button type="button" class="btn btn-success">Salva</button>
+      
+      
+      <button type="button" class="btn btn-danger">Annulla</button>
+      

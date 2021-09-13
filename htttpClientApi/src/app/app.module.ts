@@ -14,6 +14,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RatingModule } from 'ngx-bootstrap/rating';
 import { HomeComponent } from './home/home.component';
 import { BassoComponent } from './basso/basso.component';
+import { SchermataHomeComponent } from './schermata-home/schermata-home.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { BassoComponent } from './basso/basso.component';
     SkillComponent,
     CategoriesComponent,
     HomeComponent,
-    BassoComponent
+    BassoComponent,
+    SchermataHomeComponent
   ],
   imports: [
     BrowserModule,
