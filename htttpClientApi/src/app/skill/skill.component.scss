@@ -1,0 +1,21 @@
+.background{
+    background-image: url(https://www.sabdesign.it/wp-content/uploads/2015/10/sfondo-sabdesign-siti-web.jpg);
+    padding: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    columns: 1;
+    
+}
+
+.d-flex.flex-column{
+    font-size: 2,4px;
+    font-family: 'Condal', sans-serif;
+    color: white;
+}
+
+:host {
+    ::ng-deep .ui-radiobutton-box.ui-widget.ui-state-default.ui-state-active {
+    display: none !important;
+}}

@@ -1,31 +1,36 @@
 <app-home></app-home>
 
-<div class="d-flex">
-  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchQuery">
-  <button class="btn btn-outline-success" type="button" (click)="loadSkills()">Search</button>
+<div class="background">
+  <pre>{{selectedSkill | json}}</pre>
+  <div class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchQuery">
+    <button class="btn btn-outline-success" type="button" (click)="loadSkills()">Search</button>
+  </div>
+
+  <div *ngFor="let skill of skills" class="d-flex flex-column">
+    <div class="d-flex">
+      <p-radioButton name="skill" [value]="skill" [(ngModel)]="selectedSkill"></p-radioButton>
+      <label>{{skill.skill_name}}</label>
+    </div>
+  </div>
+
+
+
+
+  <div *ngIf="selectedSkill">
+    <rating [max]="5" [(ngModel)]="selectedSkill.rating" [customTemplate]="tt"></rating>
+    <ng-template #tt let-i="index" let-v="value">
+      <button class="btn btn-{{i < v ? 'warning' : 'default'}}">
+        {{i < v ? '&#9733;' : '&#9734;' }} </button>
+    </ng-template>
+  </div>
+
+
+
+
+  <button type="button" class="btn btn-success">Aggiungere</button>
+
+
+  <button type="button" class="btn btn-danger">Annulla</button>
+
 </div>
-
-    <ul>
-        <li *ngFor="let skill of skills">{{skill.skill_name}}</li>
-    </ul>
-    
-
-      
-
-      <div>
-        <rating [max]="5" [(ngModel)]="y" [customTemplate]="tt"></rating>
-        <ng-template #tt let-i="index" let-v="value">
-          <button class="btn btn-{{i < v ? 'warning' : 'default'}}">
-            {{i < v ? '&#9733;' : '&#9734;'}}
-          </button>
-        </ng-template>
-      </div>
-
-     
-     
-     
-      <button type="button" class="btn btn-success">Salva</button>
-      
-      
-      <button type="button" class="btn btn-danger">Annulla</button>
-      

@@ -15,6 +15,7 @@ import { RatingModule } from 'ngx-bootstrap/rating';
 import { HomeComponent } from './home/home.component';
 import { BassoComponent } from './basso/basso.component';
 import { SchermataHomeComponent } from './schermata-home/schermata-home.component';
+import {RadioButtonModule} from 'primeng-lts/radiobutton';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { SchermataHomeComponent } from './schermata-home/schermata-home.componen
     CategoriesComponent,
     HomeComponent,
     BassoComponent,
-    SchermataHomeComponent
+    SchermataHomeComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +34,8 @@ import { SchermataHomeComponent } from './schermata-home/schermata-home.componen
     RatingModule,
     SplitButtonModule,
     TabViewModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RadioButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
