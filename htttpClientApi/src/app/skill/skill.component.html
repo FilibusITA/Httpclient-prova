@@ -4,7 +4,7 @@
   <pre>{{selectedSkill | json}}</pre>
   <div class="d-flex">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchQuery">
-    <button pButton pRipple type="button" icon="pi pi-search" class="p-button-rounded p-button-success" (click)="loadSkills()"></button>
+    <button (click)="loadSkills()" type="button" class="btn btn-info">Cerca</button>
   </div>
 
   <div *ngFor="let skill of skills" class="d-flex flex-column">
@@ -17,13 +17,14 @@
 
 
 
-  <div *ngIf="selectedSkill">
+ <!--  <div *ngIf="selectedSkill">
     <rating [max]="5" [(ngModel)]="selectedSkill.rating" [customTemplate]="tt"></rating>
     <ng-template #tt let-i="index" let-v="value">
       <button class="btn btn-{{i < v ? 'warning' : 'default'}}">
         {{i < v ? '&#9733;' : '&#9734;' }} </button>
     </ng-template>
-  </div>
+  </div> -->
+  <p-rating [(ngModel)]="selectedSkill.rating"></p-rating>
 
 
 
