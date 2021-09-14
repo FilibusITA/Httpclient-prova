@@ -32,7 +32,7 @@ export class SkillComponent implements OnInit {
 
   loadSkills() {
     console.log("search:", this.searchQuery)
-    this.skillService.getSkills('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZpbGliZXJ0by5yaWNjaUBzbWFydHBlZy5ldSIsImV4cGlyZXMiOjE2MzE2MDU1NDYuNTI1Mzk1Nn0.b1MTaKzKVVr9BA3_N7BN4-9bRUD5AjMEtHee3VN6qs8', this.searchQuery)
+    this.skillService.getSkills('eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6ImZpbGliZXJ0by5yaWNjaUBzbWFydHBlZy5ldSIsImV4cGlyZXMiOjE2MzE3MTY2ODMuMTYyMjc0Nn0.HnAmNgmcZB1YcW5r55emixCvAcJQQ5oao4_r7M3VpdE', this.searchQuery)
       .subscribe(newskills => {
         this.skills = newskills.skills;
       });
