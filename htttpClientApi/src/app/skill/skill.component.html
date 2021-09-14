@@ -4,7 +4,7 @@
   <pre>{{selectedSkill | json}}</pre>
   <div class="d-flex">
     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" [(ngModel)]="searchQuery">
-    <button class="btn btn-outline-success" type="button" (click)="loadSkills()">Search</button>
+    <button pButton pRipple type="button" icon="pi pi-search" class="p-button-rounded p-button-success" (click)="loadSkills()"></button>
   </div>
 
   <div *ngFor="let skill of skills" class="d-flex flex-column">

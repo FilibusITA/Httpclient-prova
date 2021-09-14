@@ -16,6 +16,8 @@ import { HomeComponent } from './home/home.component';
 import { BassoComponent } from './basso/basso.component';
 import { SchermataHomeComponent } from './schermata-home/schermata-home.component';
 import {RadioButtonModule} from 'primeng-lts/radiobutton';
+import { ProfiloUtenteComponent } from './profilo-utente/profilo-utente.component';
+import {ButtonModule} from 'primeng-lts/button';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import {RadioButtonModule} from 'primeng-lts/radiobutton';
     HomeComponent,
     BassoComponent,
     SchermataHomeComponent,
+    ProfiloUtenteComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +38,8 @@ import {RadioButtonModule} from 'primeng-lts/radiobutton';
     SplitButtonModule,
     TabViewModule,
     BrowserAnimationsModule,
-    RadioButtonModule
+    RadioButtonModule,
+    ButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
