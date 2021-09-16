@@ -12,6 +12,7 @@ export class SkillService {
   
   skills: Skill[] = []
   link: string =''
+  val1:number=0;
 
   constructor(private http: HttpClient) { }
 

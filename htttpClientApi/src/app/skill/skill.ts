@@ -4,7 +4,8 @@ export interface Skill {
     uid: string,
     skill_name: string,
     isSelected: boolean,
-    rating: number
+    rating: number,
+    anni: number
 
     /*
         "skill_id": "EbRrGLJExjofCyZinw4hUr",

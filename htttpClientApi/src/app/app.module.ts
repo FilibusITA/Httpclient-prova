@@ -18,6 +18,12 @@ import { SchermataHomeComponent } from './schermata-home/schermata-home.componen
 import {RadioButtonModule} from 'primeng-lts/radiobutton';
 import { ProfiloUtenteComponent } from './profilo-utente/profilo-utente.component';
 import {ButtonModule} from 'primeng-lts/button';
+import {SliderModule} from 'primeng/slider';
+import {PaginatorModule} from 'primeng/paginator';
+import {ScrollPanelModule} from 'primeng/scrollpanel';
+import {ChartModule} from 'primeng/chart';
+import { AppConfigService } from './app-config.service';
+
 
 @NgModule({
   declarations: [
@@ -39,9 +45,13 @@ import {ButtonModule} from 'primeng-lts/button';
     TabViewModule,
     BrowserAnimationsModule,
     RadioButtonModule,
-    ButtonModule
+    ButtonModule,
+    SliderModule,
+    PaginatorModule,
+    ScrollPanelModule,
+    ChartModule
   ],
-  providers: [],
+  providers: [AppConfigService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
